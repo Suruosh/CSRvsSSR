@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ssr</title>
     <link rel="stylesheet" href="styles.css">
+    <script>window.ssrStart = performance.now();</script>
 </head>
 <body>
     <div class="hero-container">
@@ -18,5 +19,143 @@
             <p class="hero-desc">This is a demonstration of Server-Side Rendering (SSR).</p>
         </div>
     </div>
+    <div class="content-section">
+        <h2>Pre-rendered Content (120 items)</h2>
+        <div class="demo-grid">
+            <div class="demo-card"><h3>Item 1</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 2</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 3</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 4</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 5</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 6</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 7</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 8</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 9</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 10</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 11</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 12</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 13</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 14</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 15</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 16</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 17</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 18</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 19</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 20</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 21</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 22</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 23</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 24</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 25</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 26</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 27</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 28</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 29</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 30</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 31</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 32</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 33</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 34</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 35</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 36</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 37</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 38</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 39</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 40</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 41</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 42</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 43</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 44</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 45</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 46</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 47</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 48</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 49</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 50</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 51</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 52</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 53</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 54</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 55</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 56</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 57</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 58</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 59</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 60</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 61</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 62</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 63</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 64</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 65</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 66</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 67</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 68</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 69</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 70</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 71</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 72</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 73</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 74</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 75</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 76</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 77</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 78</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 79</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 80</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 81</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 82</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 83</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 84</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 85</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 86</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 87</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 88</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 89</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 90</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 91</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 92</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 93</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 94</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 95</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 96</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 97</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 98</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 99</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 100</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 101</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 102</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 103</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 104</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 105</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 106</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 107</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 108</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 109</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 110</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 111</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 112</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 113</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 114</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 115</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+            <div class="demo-card"><h3>Item 116</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 1</span></div>
+            <div class="demo-card"><h3>Item 117</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 2</span></div>
+            <div class="demo-card"><h3>Item 118</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 3</span></div>
+            <div class="demo-card"><h3>Item 119</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 4</span></div>
+            <div class="demo-card"><h3>Item 120</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p><span class="demo-tag">Tag 5</span></div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('load', () => {
+            const totalTime = Math.round(performance.now() - window.ssrStart);
+            const widget = document.createElement('div');
+            widget.className = 'perf-widget';
+            widget.innerHTML = `
+                <div class="perf-item"><span>Content Ready:</span> <strong>Instant</strong></div>
+                <div class="perf-item"><span>Total Load:</span> <strong>${totalTime}ms</strong></div>
+                <div class="perf-item"><span>Type:</span> <strong>SSR</strong></div>
+            `;
+            document.body.appendChild(widget);
+        });
+    </script>
 </body>
 </html>
