@@ -1,9 +1,7 @@
 // Performance tracking for CSR
 const startTime = performance.now();
-let contentReadyTime = null;
 
 document.addEventListener("DOMContentLoaded", () => {
-    contentReadyTime = performance.now() - startTime;
     const app = document.getElementById("app");
     
     // Generate 120 content items
@@ -15,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     `).join('');
     
+    // Render content to DOM
     app.innerHTML = `
         <div class="hero-container">
             <img src="csr.jpg" alt="Mountains" class="hero-bg">
@@ -34,14 +33,19 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         </div>
     `;
+    
+    // Measure AFTER rendering (this is when content is ready)
+    window.csr_contentReady = Math.round(performance.now() - startTime);
 });
 
 window.addEventListener('load', () => {
     const totalTime = Math.round(performance.now() - startTime);
+    const contentReadyTime = window.csr_contentReady || 0;
+    
     const widget = document.createElement('div');
     widget.className = 'perf-widget';
     widget.innerHTML = `
-        <div class="perf-item"><span>Content Ready:</span> <strong>${Math.round(contentReadyTime)}ms</strong></div>
+        <div class="perf-item"><span>Content Ready:</span> <strong>${contentReadyTime}ms</strong></div>
         <div class="perf-item"><span>Total Load:</span> <strong>${totalTime}ms</strong></div>
         <div class="perf-item"><span>Type:</span> <strong>CSR</strong></div>
     `;

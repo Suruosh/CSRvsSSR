@@ -145,12 +145,17 @@
         </div>
     </div>
     <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            window.ssr_contentReady = Math.round(performance.now() - window.ssrStart);
+        });
+        
         window.addEventListener('load', () => {
             const totalTime = Math.round(performance.now() - window.ssrStart);
+            const contentReadyTime = window.ssr_contentReady || 0;
             const widget = document.createElement('div');
             widget.className = 'perf-widget';
             widget.innerHTML = `
-                <div class="perf-item"><span>Content Ready:</span> <strong>Instant</strong></div>
+                <div class="perf-item"><span>Content Ready:</span> <strong>${contentReadyTime}ms</strong></div>
                 <div class="perf-item"><span>Total Load:</span> <strong>${totalTime}ms</strong></div>
                 <div class="perf-item"><span>Type:</span> <strong>SSR</strong></div>
             `;
