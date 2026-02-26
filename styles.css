@@ -1,6 +1,4 @@
-/* --------------------
-   Base / Reset
--------------------- */
+
 * {
   box-sizing: border-box;
 }
@@ -14,9 +12,6 @@ body {
   line-height: 1.6;
 }
 
-/* --------------------
-   Hero Section
--------------------- */
 .hero-container {
   position: relative;
   width: 100vw;
@@ -88,19 +83,7 @@ body {
   text-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
-/* --------------------
-   Landing / Demo Links
--------------------- */
-/* Removed: .landing-links and .landing-link - no longer used */
 
-/* --------------------
-   Content Section
--------------------- */
-/* Removed: .main-content and generic h2, h3, ul, li - no longer used */
-
-/* --------------------
-   Index Page
--------------------- */
 .app {
   min-height: 100vh;
   display: flex;
@@ -234,7 +217,7 @@ body {
   font-size: 1rem;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
