@@ -4,7 +4,7 @@
 <h3>
 Explore the differences between Client-Side and Server-Side Rendering </h3>
 <h2>see live: https://csr-ssr.netlify.app/ </h2> 
-<img width="800" height="1706" alt="image" src="https://github.com/user-attachments/assets/8e4c72d4-2bdc-4e44-acaf-6421ce303745" />
+<img width="1280" height="1280" alt="image" src="https://github.com/user-attachments/assets/8f453592-c002-4cac-944e-a509b88c6172" />
 <img width="2558" height="1414" alt="image" src="https://github.com/user-attachments/assets/4e2d2039-8a8d-4e32-88c0-e4b3a96553eb" />
 <img width="2559" height="1416" alt="image" src="https://github.com/user-attachments/assets/0e73ca09-2de9-4b9b-aa72-68afff9a7aab" />
 
