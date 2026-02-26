@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rendering Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Main -->
+  <main class="content">
+
+    <!-- Intro -->
+    <section class="intro">
+      <h1>CSR vs SSR</h1>
+      <p>Explore the differences between Client-Side and Server-Side Rendering</p>
+      <div class="intro-links">
+        <a href="ssr.html" class="intro-link">Explore SSR</a>
+        <a href="csr.html" class="intro-link">Explore CSR</a>
+      </div>
+    </section>
+
+    <!-- Details -->
+    <section class="details">
+
+      <div class="block">
+        <h2>Performance</h2>
+
+        <h3>Time to First Content</h3>
+        <p><strong>SSR:</strong> Immediate HTML content.</p>
+        <p><strong>CSR:</strong> Waits for JavaScript.</p>
+
+        <h3>Perceived Speed</h3>
+        <p><strong>SSR:</strong> Faster.</p>
+        <p><strong>CSR:</strong> Blank screen risk.</p>
+      </div>
+
+      <div class="block">
+        <h2>SEO</h2>
+
+        <h3>Indexing</h3>
+        <p><strong>SSR:</strong> Fully crawlable.</p>
+        <p><strong>CSR:</strong> JS execution required.</p>
+      </div>
+
+      <div class="block">
+        <h2>User Experience</h2>
+
+        <h3>Reliability</h3>
+        <p><strong>SSR:</strong> Works without JS.</p>
+        <p><strong>CSR:</strong> JS-dependent.</p>
+      </div>
+
+        <div class="conclusion">
+            <p>
+                In simple terms, Server-Side Rendering shines when you want pages to feel fast,
+                predictable, and easy to discover. It’s a solid choice for content-driven projects
+                where first impressions and SEO genuinely matter.
+                
+                Client-Side Rendering, on the other hand, offers more freedom on the interaction side.
+                It works best when the experience itself is the product — dynamic, responsive, and
+                app-like.
+            </p>
+
+            <p>
+                There’s no universal winner here. The right approach depends on what you’re building
+                and what you want users to feel first: speed and clarity, or interaction and flow.
+            </p>
+
+            <p class="signature">
+                Best regards,<br>
+                <strong>Suruosh M.</strong>
+            </p>
+        </div>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

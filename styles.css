@@ -1,0 +1,277 @@
+/* --------------------
+   Base / Reset
+-------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #0f0f0f;
+  color: #ffffff;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* --------------------
+   Hero Section
+-------------------- */
+.hero-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.7) contrast(1.1);
+}
+
+.navbar {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+
+.logo {
+  font-size: 1.1rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.menu-icon {
+  font-size: 1.8rem;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.explore-text {
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 900;
+  text-transform: lowercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.5rem;
+  color: rgba(255,255,255,0.9);
+  text-shadow: 0 8px 32px rgba(0,0,0,0.5);
+}
+
+.hero-desc {
+  max-width: 560px;
+  font-size: 1.15rem;
+  color: #e0e0e0;
+  margin-bottom: 2.5rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* --------------------
+   Landing / Demo Links
+-------------------- */
+/* Removed: .landing-links and .landing-link - no longer used */
+
+/* --------------------
+   Content Section
+-------------------- */
+/* Removed: .main-content and generic h2, h3, ul, li - no longer used */
+
+/* --------------------
+   Index Page
+-------------------- */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  padding: 4rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  background: #0f0f0f;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.intro h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  font-weight: 300;
+}
+
+.intro-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.intro-link {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.25s ease;
+}
+
+.intro-link:hover {
+  background: #fff;
+  color: #0f0f0f;
+  border-color: #fff;
+  transform: translateY(-3px);
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.block {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.2rem;
+  padding: 2.2rem;
+  transition: all 0.3s ease;
+}
+
+.block:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+}
+
+.block h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.06em;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.8rem;
+}
+
+.block h3 {
+  font-size: 1rem;
+  color: #d0d0d0;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.block p {
+  color: #a0a0a0;
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.7;
+}
+
+.block strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+.content .conclusion {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.2rem;
+  padding: 2.5rem;
+  text-align: left;
+  font-size: 1rem;
+  color: #c0c0c0;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+.content .conclusion p {
+  margin: 0 0 1.2rem 0;
+  color: #c0c0c0;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .hero .logo {
+    font-size: 1.3rem;
+  }
+
+  .content {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .intro-links {
+    gap: 1rem;
+  }
+
+  .intro-link {
+    padding: 0.9rem 1.8rem;
+    font-size: 0.95rem;
+  }
+
+  .details {
+    gap: 1.5rem;
+  }
+
+  .block {
+    padding: 1.8rem;
+  }
+}
